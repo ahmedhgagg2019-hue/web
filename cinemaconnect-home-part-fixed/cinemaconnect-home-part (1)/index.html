@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CinemaConnect · Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a href="index.html" class="brand"
+          >CINEMA<span class="dot">•</span>CONNECT</a
+        >
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          ☰
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" data-page="home">Home</a></li>
+          <li><a href="browse.html" data-page="browse">Browse Movies</a></li>
+          <li><a href="bookings.html" data-page="bookings">My Bookings</a></li>
+          <li>
+            <a
+              href="admin.html"
+              data-page="admin"
+              id="adminNavLink"
+              class="hidden"
+              >Admin</a
+            >
+          </li>
+        </ul>
+        <div class="nav-cta" id="navCta"></div>
+      </nav>
+      <div class="filmstrip-rule"></div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <p class="eyebrow">Book Smarter, Watch Sooner</p>
+          <h1>Your Night at the Movies Starts Here</h1>
+          <p class="hero-sub">
+            Browse showtimes, pick your seats, and book your tickets in
+            seconds — all in one place.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="browse.html">Browse Movies</a>
+            <a class="btn btn-outline" href="register.html">Create Account</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Image slide-bar -->
+      <section class="slider-section container">
+        <div class="slider" id="heroSlider">
+          <div class="slider-track" id="sliderTrack"></div>
+          <button class="slider-arrow prev" id="sliderPrev" aria-label="Previous slide">
+            ‹
+          </button>
+          <button class="slider-arrow next" id="sliderNext" aria-label="Next slide">
+            ›
+          </button>
+          <div class="slider-dots" id="sliderDots"></div>
+        </div>
+      </section>
+
+      <!-- Featured movies -->
+      <section class="container section">
+        <div class="section-head">
+          <div class="section-title">
+            <small>Now Showing</small>Featured Movies
+          </div>
+          <a href="browse.html" class="see-all">See all →</a>
+        </div>
+        <div class="movie-grid" id="featuredMovies"></div>
+      </section>
+
+      <!-- How it works -->
+      <section class="container section how-it-works">
+        <div class="section-title">
+          <small>How it works</small>Book in 3 easy steps
+        </div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <h3>Choose a Movie</h3>
+            <p>Browse what's playing and pick the one you're in the mood for.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <h3>Pick Your Seats</h3>
+            <p>Select a showtime and choose your favorite seats in the theater.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <h3>Get Your Tickets</h3>
+            <p>Confirm your booking and get your tickets sent to your account.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="filmstrip-rule flip"></div>
+      <div class="container">
+        CinemaConnect · Web Development Summer Training 2026.
+      </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/home.js"></script>
+    <script>
+      ccRenderNav('home');
+    </script>
+  </body>
+</html>
